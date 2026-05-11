@@ -1,4 +1,4 @@
-# Viso AI Development Workspace
+# AI Development Workspace
 
 This is the central workspace designed for AI-assisted development across multiple source code repositories. It provides the tooling, standards, and structured workflows necessary to build, plan, and review code using AI agents.
 
