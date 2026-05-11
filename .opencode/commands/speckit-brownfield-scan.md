@@ -1,0 +1,1 @@
+../../.agents/skills/speckit-brownfield-scan/SKILL.md

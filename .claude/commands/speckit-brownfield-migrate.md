@@ -1,0 +1,1 @@
+../../.agents/skills/speckit-brownfield-migrate/SKILL.md

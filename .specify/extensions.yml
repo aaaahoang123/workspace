@@ -114,13 +114,13 @@ hooks:
     prompt: Commit task changes?
     description: Auto-commit after task generation
     condition: null
-  - extension: blueprint
-    command: speckit.blueprint.generate
-    enabled: true
-    optional: true
-    prompt: Generate blueprint from tasks?
-    description: Auto-generate blueprint.md after task generation
-    condition: null
+  # - extension: blueprint
+  #   command: speckit.blueprint.generate
+  #   enabled: true
+  #   optional: true
+  #   prompt: Generate blueprint from tasks?
+  #   description: Auto-generate blueprint.md after task generation
+  #   condition: null
   after_implement:
   - extension: git
     command: speckit.git.commit
@@ -129,13 +129,13 @@ hooks:
     prompt: Commit implementation changes?
     description: Auto-commit after implementation
     condition: null
-  - extension: review
-    command: speckit.review.run
-    enabled: true
-    optional: true
-    prompt: Run PR review on implemented changes?
-    description: Comprehensive review after implementation
-    condition: null
+  # - extension: review
+  #   command: speckit.review.run
+  #   enabled: true
+  #   optional: true
+  #   prompt: Run PR review on implemented changes?
+  #   description: Comprehensive review after implementation
+  #   condition: null
   after_checklist:
   - extension: git
     command: speckit.git.commit
@@ -159,4 +159,12 @@ hooks:
     optional: true
     prompt: Commit after syncing issues?
     description: Auto-commit after tasks-to-issues conversion
+    condition: null
+  after_init:
+  - extension: brownfield
+    command: speckit.brownfield.scan
+    enabled: true
+    optional: true
+    prompt: Scan this existing project to customize spec-kit configuration?
+    description: Auto-scan project after spec-kit init to detect tech stack and conventions
     condition: null
