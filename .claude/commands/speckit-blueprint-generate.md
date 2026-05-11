@@ -1,0 +1,1 @@
+../../.agents/skills/speckit-blueprint-generate/SKILL.md

@@ -1,0 +1,6 @@
+.idea
+.vscodebackend/server
+data/
+.specify/.cache/
+node_modules/
+vendor/

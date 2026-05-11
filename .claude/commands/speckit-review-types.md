@@ -1,0 +1,1 @@
+../../.agents/skills/speckit-review-types/SKILL.md
